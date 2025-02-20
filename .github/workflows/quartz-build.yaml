@@ -32,6 +32,12 @@ jobs:
         with:
           node-version: v20.x
 
+# Neuer Schritt für npm install
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install yargs
+
       - name: Build Node assets
         env:
           CI: true
